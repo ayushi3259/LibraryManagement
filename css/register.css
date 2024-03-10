@@ -1,0 +1,10 @@
+body{
+	background-image: url('../images/book_formula.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	color:black;
+}
+.box a{
+    color:black;
+	font-size: x-large;
+}

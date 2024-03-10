@@ -1,0 +1,9 @@
+body{
+	background-image: url('../images/book_wall.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	color:white;
+}
+.box a{
+    color:white;
+}

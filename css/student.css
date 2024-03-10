@@ -1,0 +1,158 @@
+body {
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.box a {
+	color: white;
+	font-size: x-large;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	margin-top: -23px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+	margin-top: -10px;
+	position: relative
+}
+
+
+nav ul li a:hover {
+	color: #8f8a8a;
+}
+
+.box a {
+	color: white;
+	font-size: 20px;
+}
+
+nav ul li a::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	background: rgb(135, 132, 132);
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.studentDiv {
+
+	input[type=text],
+	input[type=firstname],
+	input[type=lastname],
+	input[type=email],
+	input[type=password] {
+		width: 211px;
+		margin-bottom: 3px;
+		padding: 10px 6px;
+	}
+
+	input[type=text],
+	input[type=reenterpassowrd] {
+
+		width: 200px;
+	}
+}
+
+.student {
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	max-width: 300px;
+	padding: 16px;
+	background-color: black;
+
+}
+
+input[type=number],
+input[type=rollnumber] {
+	width: 40%;
+	padding-bottom: 8px;
+	margin: 5px 0 22px 0;
+	margin-bottom: 6px;
+	border: none;
+	background-color: black;
+}
+
+input[type=number]:focus,
+input[type=rollnumber]:focus {
+	background-color: grey;
+	outline: none;
+}
+
+input[type=number],
+input[type=rollnumber] {}
+
+select {
+	background-color: black;
+	margin: 12px;
+}
+
+select:focus {
+	background-color: grey;
+	outline: none;
+	box-shadow: none;
+}
+
+input[type=text],
+input[type=firstname],
+input[type=lastname],
+input[type=email],
+input[type=rollnumber],
+input[type=password],
+input[type=reenterpassword] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background-color: black;
+}
+
+
+input[type=text]:focus,
+input[type=firstname]:focus,
+input[type=lastname]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=reenterpassword]:focus {
+	background-color: grey;
+	outline: none;
+}
+
+.student {
+	background-color: black;
+}
+
+.studentDiv a {
+	color: white;
+	text-decoration: none;
+
+}
+
+newUser a:hover {
+	color: #8f8a8a;
+}

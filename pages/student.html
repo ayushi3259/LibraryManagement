@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/student.css">
+	<title>Register</title>
+</head>
+
+<body>
+	<div class="box">
+		<nav>
+			<h1>LIBRARY MANAGEMENT</h1>
+			<!-- <img src="images/fce8f1f2c05f59b62e64dc0831cc43af.jpg" class="logo"> -->
+			<ul>
+				<li><a href="/index.html" style="text-decoration: none">Home</a> </li>
+
+				<li><a href="./books.html" style="text-decoration: none">Books</a> </li>
+
+				<li><a href="./admin.html" style="text-decoration: none">Admin</a> </li>
+
+				<li><a href="./feedback.html" style="text-decoration: none">Feedback</a> </li>
+
+				<li><a href="./contact.html" style="text-decoration: none">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="studentDiv">
+		<form action="#" class="student" method="POST">
+
+			<h2>STUDENT LOGIN</h2>
+
+			<label for="firstname">First Name</label>
+			<input type="text" name="Firstname" id="firstname" placeholder="Enter first name" required>
+			<br>
+			<label for="lastname">Last Name</label>
+			<input type="text" name="Lastname" id="lastname" placeholder="Enter last name">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" name="Email" id="email" placeholder="Enter Email">
+			<br>
+			<label for="rollnumber">Roll number:</label>
+			<input type="number" name="Rollnumber" id="rollnumber" value="53">
+			<br>
+			<label for="branch">Branch</label>
+			<select name="branch" id="branch">
+				<option value="Btech cse">Btech CSE</option>
+				<option value="Btech ece">Btech ECE</option>
+				<option value="Btech me">Btech ME</option>
+				<option value="BBA">BBA</option>
+				<option value="BBA Law">BBA Law</option> <!-- Make sure to add text for this option -->
+			</select>
+			<br>
+			<label for="password">Enter password</label>
+			<input type="password" name="Password" id="password" placeholder="Password">
+			<br>
+			<label for="reenterpassword">Re-enter password</label>
+			<input type="password" name="Reenterpassword" id="reenterpassword" placeholder="Re-enter password">
+			<br>
+			<button type="submit" class="register">Register</button> or
+			<a href="/index.html">Login</a>
+		</form>
+	</div>
+
+</body>
+
+</html>
