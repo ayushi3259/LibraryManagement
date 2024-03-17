@@ -1,0 +1,11 @@
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.field label {
+    margin-bottom: 10px;
+}

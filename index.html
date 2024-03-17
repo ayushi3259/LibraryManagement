@@ -4,6 +4,7 @@
 <head>
 	<title>Library Management</title>
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<link rel="stylesheet" type="text/csss" href="./css/template.css">
 
 </head>
 
@@ -20,7 +21,7 @@
 
 
 
-				<li><a href="./pages/feedback.html" style="text-decoration: none">Feedback</a> </li>
+				<li id="openModalBtn">Feedback </li>
 
 				<li><a href="./pages/contact.html" style="text-decoration: none">Contact</a></li>
 
@@ -34,11 +35,15 @@
 		<form action="#" class="container">
 			<h1>Login</h1>
 
-			<label for="email"><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
+			<div class="field">
+				<label for="email"><b>Email</b></label>
+				<input class="inp" type="text" placeholder="example123@gmail.com" name="email" required>
+			</div>
 
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+			<div class="field">
+				<label for="psw"><b>Password</b></label>
+				<input class="inp" type="password" placeholder="Enter Password" name="psw" required>
+			</div>
 
 			<button type="submit" class="btn"><a href="./pages/login.html">Login</a></button>
 			<p class="newUser">New User? <a class="Register" href="./pages/student.html"
@@ -46,8 +51,22 @@
 		</form>
 	</div>
 
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Feedback Form</h2>
+			<form id="feedbackForm">
+				<input class="inp" type="text" id="name" placeholder="Your Name" required><br>
+				<input class="inp" type="email" id="email" placeholder="Your Email" required><br>
+				<textarea class="inp" id="feedback" placeholder="Your Feedback" required></textarea><br>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+
 
 	</div>
+	<script src="./pages/JavaScript/script.js"></script>
 </body>
 
 </html>
